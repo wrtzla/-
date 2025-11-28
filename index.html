@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeamKG | Windows 95</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.cdnfonts.com/css/ms-sans-serif" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"MS Sans Serif"', 'Tahoma', 'sans-serif'],
+            },
+            colors: {
+              win95: {
+                teal: '#008080',
+                gray: '#c0c0c0',
+                blue: '#000080',
+                text: '#000000',
+              }
+            },
+            boxShadow: {
+              'out': 'inset 1px 1px #dfdfdf, inset -1px -1px #000000, inset 2px 2px #ffffff, inset -2px -2px #808080',
+              'in': 'inset 1px 1px #000000, inset -1px -1px #ffffff, inset 2px 2px #808080, inset -2px -2px #dfdfdf',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #008080;
+        color: #000000;
+        font-family: 'MS Sans Serif', Tahoma, sans-serif;
+        -webkit-font-smoothing: none; /* Keep fonts pixelated/crisp */
+      }
+      
+      /* Scrollbar styling for webkit */
+      ::-webkit-scrollbar {
+        width: 16px;
+        background: #dfdfdf;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #c0c0c0;
+        box-shadow: inset 1px 1px #ffffff, inset -1px -1px #000000;
+      }
+      ::-webkit-scrollbar-button {
+        background: #c0c0c0;
+        width: 16px;
+        height: 16px;
+        box-shadow: inset 1px 1px #ffffff, inset -1px -1px #000000, inset 2px 2px #dfdfdf, inset -2px -2px #808080;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
