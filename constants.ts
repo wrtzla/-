@@ -2,7 +2,7 @@ import { Github, Youtube, Mail, BookOpen, Monitor, ExternalLink } from 'lucide-r
 import { SocialLink, LinkCategory } from './types';
 
 export const PROFILE_DATA = {
-  name: "TeamKG",
+  name: "Christof",
   title: "Full Stack Developer & Creative Coder",
   bio: "热爱技术，探索无限可能。专注于前端工程化、UI/UX 设计以及人工智能应用开发。欢迎来到我的数字花园。",
   avatarUrl: "https://picsum.photos/200/200", // Using placeholder as requested
@@ -31,7 +31,7 @@ export const LINKS: SocialLink[] = [
     id: 'bilibili',
     title: 'Bilibili',
     description: '观看我的视频教程与生活分享',
-    url: 'https://www.bilibili.com/', // User to update specific ID
+    url: 'https://space.bilibili.com/246548743', // User to update specific ID
     icon: Youtube, // Using Youtube icon as generic video platform icon substitute
     category: LinkCategory.SOCIAL,
   },
